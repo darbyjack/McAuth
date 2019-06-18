@@ -1,0 +1,5 @@
+name: McAuth
+version: ${project.version}
+main: me.glaremasters.mcauth.McAuth
+authors: [Glare]
+description: McAuth
