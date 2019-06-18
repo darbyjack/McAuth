@@ -27,10 +27,19 @@ public final class McAuth extends JavaPlugin {
 
     }
 
+    /**
+     * Create a new chain to be used for the MySQL
+     * @param <T> chain
+     * @return new chain
+     */
     public static <T> TaskChain<T> newChain() {
         return taskChainFactory.newChain();
     }
 
+    /**
+     * Get an instance of the database
+     * @return database
+     */
     public DatabaseProvider getDatabase() {
         return database;
     }

@@ -41,6 +41,11 @@ public class Login implements Listener {
         event.disallow(AsyncPlayerPreLoginEvent.Result.KICK_OTHER, sb.toString());
     }
 
+    /**
+     * Create the token
+     * @param count the amount of characters
+     * @return the random string
+     */
     public String randomAlphaNumeric(int count) {
         StringBuilder builder = new StringBuilder();
         while (count-- != 0) {
@@ -50,6 +55,11 @@ public class Login implements Listener {
         return builder.toString();
     }
 
+    /**
+     * Color the string
+     * @param input input
+     * @return colored
+     */
     public String color(String input) {
         return ChatColor.translateAlternateColorCodes('&', input);
     }
